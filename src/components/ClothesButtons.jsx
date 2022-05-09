@@ -2,26 +2,10 @@ import React from 'react'
 import {Button, List} from 'reactstrap'
 import './style.css'
 
-export default function ClothesButton() {
+export default function ClothesButton(props) {
   return (
-    <div className='ButtonList'>
-      <List type='unstyled'>
-        <li>
-          <Button className='boton'>Playera</Button>
-        </li>
-        <br/>
-        <li>
-          <Button className='boton'>Pantalones</Button>
-        </li>
-        <br/>
-        <li>
-        <Button className='boton'>Sudadera</Button>
-        </li>
-        <br/>
-      </List>
-        
-        
-        
+    <div className='buttonOuter'>
+          <Button className='boton'>{props.prenda}</Button>   
     </div>
   )
 }
